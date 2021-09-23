@@ -152,8 +152,18 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {
-  
+function howManyTimes(wordsCount, word) {
+  let result;
+  let count = 0;
+  if (wordsCount[0] === undefined) {
+    return 0;
+}
+for (let i = 0; i < wordsCount.length; i++) {
+    if (wordsCount[i] === word) {  
+      count++;
+    } 
+}
+  return count;
 }
 
 
@@ -182,7 +192,9 @@ const matrix = [
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
 
-function greatestProduct() {}
+function greatestProduct(matrix) {
+  
+}
 
 
 
